@@ -37,112 +37,134 @@
 
         </div>
 
+        <img class="topBand-img" src="./image/1526534-1.png" alt="">
 
     </header>
 
     <main>
 
-        <div class="intro">
+        <div class="select">
 
-            <div class="intro-inner">
 
-                <div class="intro-item">
+            <div class="design-select">
+
+                <div class="select-item">
                     <button id="pattern1">
                         <img src="./image/1526534-1.png" alt="pattern1">
-                        <p>Pattern 1</p>
+                        <!-- <p>1</p> -->
                     </button>
                 </div>
-                <div class="intro-item">
+                <div class="select-item">
                     <button id="pattern2">
                         <img src="./image/1402545.png" alt="pattern2">
-                        <p>Pattern 2</p>
+                        <!-- <p>2</p> -->
                     </button>
                 </div>
-                <div class="intro-item">
+                <div class="select-item">
                     <button id="pattern3">
                         <img src="./image/1595537.png" alt="pattern3">
-                        <p>Pattern 3</p>
+                        <!-- <p>3</p> -->
                     </button>
                 </div>
-                <div class="intro-item">
+                <div class="select-item">
                     <button id="pattern4">
                         <img src="./image/1829817-1.png" alt="pattern4">
-                        <p>Pattern 4</p>
+                        <!-- <p>4</p> -->
                     </button>
                 </div>
-                <div class="intro-item">
+                <div class="select-item">
                     <button id="pattern5">
                         <img src="./image/1568727.png" alt="pattern5">
-                        <p>Pattern 5</p>
+                        <!-- <p>5</p> -->
                     </button>
                 </div>
 
             </div>
 
+            <p><b>Step 1:</b> Select</p>
+            
         </div>
 
         <div class="design">
-            <div class="design-feature">
+            <div class="design-container">
 
-                <div class="design-item1">
-                    <form id="formInput1" action="">
-                        <input id="inputGroom" type="text" maxlength="30" placeholder="Groom"><br>
-                        <input id="inputBride" type="text" maxlength="30" placeholder="Bride"><br>
-                        <input id="inputDate" type="text" maxlength="30" placeholder="Date"><br>
-                        <input id="inputVenue" type="text" maxlength="30" placeholder="Venue"><br>
-                        <textarea id="inputMessage" name="textArea" id="" cols="30" rows="7" maxlength="180"
-                            placeholder="Message"></textarea>
-                    </form>
+                <div class="design-input">
 
-                    <form id="formInput2" action="">
-                        <input id="text-white" type="button" value="White Text">
-                        <input id="text-black" type="button" value="Black Text">
-                    </form>
+                    <div class="design-01">
+                        <p><b>Step 2:</b> Type</p><br> 
+                    </div>
+    
+                    <div class="design-02">
+                        <input id="hide" type="button" value="Hide Form">
+
+                    </div>
+
+                    <div class="design-03">
+                        <input id="show" type="button" value="Show Form">
+                    </div>
+
+                    <div id="meHere" class="design-04">
+                        <form id="formInput1" action="">
+                            <input id="inputGroom" class="groom" type="text" maxlength="30" placeholder="Groom">
+                            <input id="inputBride" class="bride" type="text" maxlength="30" placeholder="Bride">
+                            <input id="inputDate" type="text" maxlength="30" placeholder="Date">
+                            <input id="inputVenue" type="text" maxlength="30" placeholder="Venue">
+                            <textarea id="inputMessage" name="textArea" id="" cols="30" rows="7" maxlength="180"
+                                placeholder="Message"></textarea>
+                        </form>
+
+                        <form id="formInput2" class="design-05" action="">
+                            <input id="text-white" type="button" value="White Text">
+                            <input id="text-black" type="button" value="Black Text">
+                        </form>
+                        
+                        <form id="formInput3" class="design-06" action="">  
+                            <input id="resetButton" input type="button" value="Reset">
+                        </form>
+
+                        <aside class="tips">
+                            <p><b>Tips</b></p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </aside>
+
+                    </div>
+
+                </div>
+               
+            <div class="design-display">
                     
+                <div id="meAlso">
+                    <p><b>Step 3:</b> Check</p><br> 
+                </div>
+      
 
-                    <form id="formInput3" action="">  
-                        <input id="resetButton" input type="button" value="Reset">
-                    </form>
-
-                    <aside>
-                        <br>
-                        <p><b>Tips</b></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis impedit qui eos voluptatem
-                            corrupti obcaecati ipsum laudantium quaerat fugiat, provident ullam, quia exercitationem
-                            necessitatibus nulla asperiores quos dicta ipsam unde.</p>
-                    </aside>
-
+                <div class="design-text">
+                    <!-- <p id="Text1">Together with their Families</p> -->
+                    <p id="clickText1"></p>
+                    <p id="displayGroomHTML"></p>
+                    <!-- <p id="Text2">&#038</p> -->
+                    <p id="clickText2"></p>
+                    <p id="displayBrideHTML"></p>
+                    <!-- <p id="Text3">are please to invite you<br>
+                        to their wedding<br>
+                        celebration.
+                    </p> -->
+                    <p id="clickText3"></p>
+                    <p id="displayDateHTML"></p>
+                    <!-- <p id="Text4">at</p> -->
+                    <p id="clickText4"></p>
+                    <!-- <p id="inputDeleteVenue">Hall, Location</p> -->
+                    <p id="displayVenueHTML"></p>
+                    <br>
+                    <!-- <p id="inputDeleteMessage">Invitation to Follow</p> -->
+                    <p id="displayMessageHTML"></p>
                 </div>
 
-                <div class="design-item2">
-
-                    <div class="design-text">
-
-                        <p id="Text1">Together with their Families</p>
-                        <!-- <p id="inputDeleteGroom">Groom</p> -->
-                        <p id="displayGroomHTML"></p>
-                        <p id="Text2">&#038</p>
-                        <!-- <p id="inputDeleteBride">Bride</p> -->
-                        <p id="displayBrideHTML"></p>
-                        <p id="Text3">are please to invite you<br>
-                            to their wedding<br>
-                            celebration.
-                        </p>
-                        <!-- <p id="inputDeleteDate">00 Date 2022</p> -->
-                        <p id="displayDateHTML"></p>
-                        <p id="Text4">at</p>
-                        <!-- <p id="inputDeleteVenue">Hall, Location</p> -->
-                        <p id="displayVenueHTML"></p>
-                        <br>
-                        <!-- <p id="inputDeleteMessage">Invitation to Follow</p> -->
-                        <p id="displayMessageHTML"></p>
-                    </div>
-
-                    <div class="design-pattern">
-                        <img id="patternShow" src="./image/1526534-1.png" alt="pattern">
-                    </div>
-
+                <div class="design-pattern">
+                    <img id="patternShow" src="./image/1526534-1.png" alt="pattern">
                 </div>
+
+            </div>
 
             </div>
         </div>
@@ -155,8 +177,6 @@
                 reprehenderit voluptatum consectetur asperiores inventore iure a ipsam quis vero ut deleniti provident!
                 Deserunt, porro veritatis!</p>
         </div>
-
-
 
     </main>
 

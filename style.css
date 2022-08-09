@@ -30,14 +30,23 @@ p {
 
 .topBand {
     width: 100%;
-    background-color: rgb(255, 255, 255, 0.8);
+    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px 5px 20px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 
+}
+
+.topBand-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 1;
 }
 
 .nav a {
@@ -76,64 +85,77 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 
-.intro {
+.select {
     padding: 150px 20px 20px 20px;
-
 }
 
-.intro-inner{
+.design-select{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     /* gap: 10px; */
 }
 
-.intro-item {
+.select-item {
     position: relative;
 }
 
-.intro-item img {
+.select-item img {
     width: 100%;
     z-index: 1;
 }
 
-.intro-item p {
+.select-item p {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1em;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
 }
 
-.intro-item button {
+.select-item button {
     border: none;
     background-color: transparent;
+    padding: 0 2.5px;
 }
 
-
+.select-item button:hover {
+    color: darkgray;
+    opacity: 0.5;
+}
 
 /* design form section */
+
+.design-02 input {
+    display: none;
+}
+
+.design-03 input {
+    display: none;
+}
 
 .design {
     background-color: lightgray;
     padding: 20px 20px;
 }
 
-.design-feature {
+.design-container {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.design-item1 {
+.design-input {
     grid-column: 1 / span 1;
     margin-right: 20px;
 }
 
-.design-item1 input {
+.design-input input {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
@@ -141,17 +163,17 @@ p {
     outline: none;
 }
 
-.design-item1 input[type=text]:focus {
+.design-input input[type=text]:focus {
     border-left: 5px solid darkgray;
   }
 
-.design-item1 ::placeholder {
+.design-input ::placeholder {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75em;
 }
 
-.design-item1 textarea {
+.design-input textarea {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
@@ -160,18 +182,28 @@ p {
     font-family:Arial, Helvetica, sans-serif
 }
 
-.design-item1 textarea:focus {
+.design-input textarea:focus {
     border-left: 5px solid darkgray;
   }
 
-.design-item2 {
+.design-input input[type=button]:hover {
+    color :darkgray;
+}
+
+
+.design-input .tips  p {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.design-display {
     grid-column: 2 / span 2;
     padding: 0px 0px 0px 0px;
     position: relative;
 }
 
-.design-item2 p {
-   font-size: 1em;
+.design-display p {
+   font-size: 0.8em;
 }
 
 .design-text {
@@ -180,7 +212,7 @@ p {
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 12.5%;
+    top: 20%;
     /* background-color: blue; */
     /* vertical-align: middle; */
 }
