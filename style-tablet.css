@@ -43,7 +43,7 @@ p {
     height: 100px;
     object-fit: cover;
     position: fixed;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: 1;
 }
 
@@ -135,7 +135,7 @@ p {
 
 
 .design {
-    background-color: greenyellow;
+    background-color: lightgray;
     padding: 20px 20px;
 
 }

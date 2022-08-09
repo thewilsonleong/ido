@@ -45,7 +45,7 @@ p {
     height: 100px;
     object-fit: cover;
     position: fixed;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: 1;
 }
 

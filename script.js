@@ -24,23 +24,23 @@ const targetShow = document.getElementById('show')
 // Function
 
 function changePattern1 () {
-  document.getElementById("patternShow").src = "./image/1526534-1.png"
+  document.getElementById("patternShow").src = "./image/pattern-4.png"
   }
 
 function changePattern2 () {
-  document.getElementById("patternShow").src = "./image/1402545.png"
+  document.getElementById("patternShow").src = "./image/pattern-1.png"
   }
 
 function changePattern3 () {
-  document.getElementById("patternShow").src = "./image/1595537.png"
+  document.getElementById("patternShow").src = "./image/pattern-5.png"
   }
 
 function changePattern4 () {
-  document.getElementById("patternShow").src = "./image/1829817-1.png"
+  document.getElementById("patternShow").src = "./image/pattern-3.png"
   }
 
 function changePattern5 () {
-  document.getElementById("patternShow").src = "./image/1568727.png"
+  document.getElementById("patternShow").src = "./image/pattern-2.png"
   }
 
 
@@ -80,9 +80,9 @@ function displayMessageJS() {
   document.getElementById('displayMessageHTML').style.color = "black"
   }
 
-  document.getElementById('clickText1').innerHTML = "Together with their Families"
+  document.getElementById('clickText1').innerHTML = "Together with our families"
   document.getElementById('clickText2').innerHTML = "&#038"
-  document.getElementById('clickText3').innerHTML = "are please to invite you <br> to their wedding <br> celebration.<br>"
+  document.getElementById('clickText3').innerHTML = "are please to invite you <br> to our wedding <br> celebration<br>"
   document.getElementById('clickText4').innerHTML = "at"
 
 
