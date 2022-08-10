@@ -28,19 +28,19 @@ function changePattern1 () {
   }
 
 function changePattern2 () {
-  document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
+  document.getElementById("patternShow").src = "./image/Pattern-1.jpg"
   }
 
 function changePattern3 () {
-  document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
+  document.getElementById("patternShow").src = "./image/Pattern-5.jpg"
   }
 
 function changePattern4 () {
-  document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
+  document.getElementById("patternShow").src = "./image/Pattern-2.jpg"
   }
 
 function changePattern5 () {
-  document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
+  document.getElementById("patternShow").src = "./image/Pattern-3.jpg"
   }
 
 
