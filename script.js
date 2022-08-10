@@ -211,8 +211,6 @@ function inputTextBlack () {
   }
 }
 
-
-
 function clickTextWhite () {
   if(document.getElementById('clickInput1') !== ""){
     document.getElementById('clickGroom').innerText = inputGroom.value;
@@ -268,7 +266,7 @@ function inputReset() {
   document.getElementById('displayMessageHTML').style.color = "darkgray"  
   }
 
-function inputClickReset () {
+function clickReset () {
   document.getElementById('clickInput1').reset();
   document.getElementById('formInput4').reset();
 
@@ -316,7 +314,6 @@ function clickShow () {
 }
 
 
-
 // CALL
 
 // Call for preview
@@ -339,13 +336,14 @@ targetClickMessage.addEventListener('input', clickMessageJS)
 targetTextWhite.addEventListener('click', inputTextWhite)
 targetTextBlack.addEventListener('click', inputTextBlack)
 targetReset.addEventListener('click', inputReset)
-targetHide.addEventListener('click', clickHide) 
-targetShow.addEventListener('click', clickShow)
-
 
 targetClickTextWhite.addEventListener('click', clickTextWhite)
 targetClickTextBlack.addEventListener('click', clickTextBlack)
-targetClickReset.addEventListener('click', inputClickReset)
+targetClickReset.addEventListener('click', clickReset)
+
+targetHide.addEventListener('click', clickHide) 
+targetShow.addEventListener('click', clickShow)
+
 
 // Call for pattern
 targetPattern1.addEventListener('click', changePattern1)
