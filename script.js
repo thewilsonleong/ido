@@ -1,28 +1,35 @@
 
-// Selector
+
+// SELECTOR
+
+// Selector for form
 const targetGroom = document.querySelector('#inputGroom')
 const targetBride = document.querySelector('#inputBride')
 const targetDate = document.querySelector('#inputDate')
 const targetVenue = document.querySelector('#inputVenue')
 const targetMessage = document.querySelector('#inputMessage')
 
+// Selector for button
+const targetHide = document.getElementById('hide')
+const targetShow = document.getElementById('show')
+
 const targetTextWhite = document.getElementById('text-white')
 const targetTextBlack = document.getElementById('text-black')
 const targetReset = document.getElementById('formInput3')
 
+// Selector for pattern
 const targetPattern1 = document.getElementById('pattern1')
 const targetPattern2 = document.getElementById('pattern2')
 const targetPattern3 = document.getElementById('pattern3')
 const targetPattern4 = document.getElementById('pattern4')
 const targetPattern5 = document.getElementById('pattern5')
 
-const targetHide = document.getElementById('hide')
-const targetShow = document.getElementById('show')
 
 
 
-// Function
+// FUNCTION
 
+// Function for pattern
 function changePattern1 () {
   document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
   }
@@ -44,7 +51,7 @@ function changePattern5 () {
   }
 
 
-  
+// Function for preview placeholder  
 document.getElementById('displayGroomHTML').innerText = "Groom"
 document.getElementById('displayGroomHTML').style.color = "darkgray"
 function displayGroomJS() {
@@ -80,16 +87,17 @@ function displayMessageJS() {
   document.getElementById('displayMessageHTML').style.color = "black"
   }
 
-  document.getElementById('clickText1').innerHTML = "Together with our families"
-  document.getElementById('clickText2').innerHTML = "&#038"
-  document.getElementById('clickText3').innerHTML = "are please to invite you <br> to our wedding <br> celebration<br>"
-  document.getElementById('clickText4').innerHTML = "at"
+
+document.getElementById('clickText1').innerHTML = "Together with our families"
+document.getElementById('clickText2').innerHTML = "&#038"
+document.getElementById('clickText3').innerHTML = "are please to invite you <br> to our wedding <br> celebration<br>"
+document.getElementById('clickText4').innerHTML = "at"
 
 
 
+// Function for button
 
 function inputTextWhite () {
-
   if(document.getElementById('formInput1') !== ""){
     document.getElementById('displayGroomHTML').innerText = inputGroom.value;
     document.getElementById('displayGroomHTML').style.color = "white"
@@ -144,34 +152,38 @@ function inputReset() {
   document.getElementById('displayMessageHTML').style.color = "darkgray"  
   }
 
-
 function clickHide () {
   document.getElementById('meHere').style.display = "none"
   document.getElementById('meAlso').style.display = "none"
   console.log('hide me')
 }
-targetHide.addEventListener('click', clickHide) 
 
 function clickShow () {
   document.getElementById('meHere').style.display = "block"
   document.getElementById('meAlso').style.display = "block"
   console.log('show me')
 }
-targetShow.addEventListener('click', clickShow)
 
 
-// Call
+
+// CALL
+
+// Call for preview
 targetGroom.addEventListener('input', displayGroomJS)
 targetBride.addEventListener('input', displayBrideJS)
 targetDate.addEventListener('input', displayDateJS)
 targetVenue.addEventListener('input', displayVenueJS)
 targetMessage.addEventListener('input', displayMessageJS)
 
+// Call for button
+
 targetTextWhite.addEventListener('click', inputTextWhite)
 targetTextBlack.addEventListener('click', inputTextBlack)
 targetReset.addEventListener('click', inputReset)
+targetHide.addEventListener('click', clickHide) 
+targetShow.addEventListener('click', clickShow)
 
-
+// Call for pattern
 targetPattern1.addEventListener('click', changePattern1)
 targetPattern2.addEventListener('click', changePattern2)
 targetPattern3.addEventListener('click', changePattern3)
