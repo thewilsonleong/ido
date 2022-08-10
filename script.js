@@ -359,5 +359,3 @@ targetPattern8.addEventListener('click', changePattern8)
 targetPattern9.addEventListener('click', changePattern9)
 targetPattern10.addEventListener('click', changePattern10)
 
-
-
