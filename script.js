@@ -39,8 +39,13 @@ const targetPattern8 = document.getElementById('pattern8')
 const targetPattern9 = document.getElementById('pattern9')
 const targetPattern10 = document.getElementById('pattern10')
 
-
-
+const myForm = {
+  Groom: document.querySelector('#inputGroom').value,
+  Bride: document.querySelector('#inputBride').value,
+  Date: document.querySelector('#inputDate').value,
+  Venue: document.querySelector('#inputVenue').value,
+  Message: document.querySelector('#inputMessage').value
+}
 
 // FUNCTION
 
@@ -84,8 +89,6 @@ document.getElementById("patternShow").src = "./image/Pattern-9.jpg"
 function changePattern10 () {
 document.getElementById("patternShow").src = "./image/Pattern-10.jpg"
 }
-
-
 
 
 // Function for preview placeholder  
