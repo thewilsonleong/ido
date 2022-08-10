@@ -9,6 +9,12 @@ const targetDate = document.querySelector('#inputDate')
 const targetVenue = document.querySelector('#inputVenue')
 const targetMessage = document.querySelector('#inputMessage')
 
+const targetClickGroom = document.querySelector('#clickGroom')
+const targetClickBride = document.querySelector('#clickBride')
+const targetClickDate = document.querySelector('#clickDate')
+const targetClickVenue = document.querySelector('#clickVenue')
+const targetClickMessage = document.querySelector('#clickMessage')
+
 // Selector for button
 const targetHide = document.getElementById('hide')
 const targetShow = document.getElementById('show')
@@ -16,6 +22,10 @@ const targetShow = document.getElementById('show')
 const targetTextWhite = document.getElementById('text-white')
 const targetTextBlack = document.getElementById('text-black')
 const targetReset = document.getElementById('formInput3')
+
+const targetClickTextWhite = document.getElementById('click-white')
+const targetClickTextBlack = document.getElementById('click-black')
+const targetClickReset = document.getElementById('formInput4')
 
 // Selector for pattern
 const targetPattern1 = document.getElementById('pattern1')
@@ -88,10 +98,49 @@ function displayMessageJS() {
   }
 
 
+document.getElementById('formText1').innerHTML = "Together with our families"
+document.getElementById('formText2').innerHTML = "&#038"
+document.getElementById('formText3').innerHTML = "are please to invite you <br> to our wedding <br> celebration<br>"
+document.getElementById('formText4').innerHTML = "at"
+
+
+// Function for click
+
+function clickGroomJS() {
+  document.getElementById('clickGroom').style.border = 0
+  document.getElementById('clickGroom').style.textAlign = "center"
+  console.log('Groom')
+}
+
+function clickBrideJS() {
+  document.getElementById('clickBride').style.border = 0
+  document.getElementById('clickBride').style.textAlign = "center"
+  console.log('Bride')
+}
+
+function clickDateJS() {
+  document.getElementById('clickDate').style.border = 0
+  document.getElementById('clickDate').style.textAlign = "center"
+  console.log('Date')
+}
+
+function clickVenueJS() {
+  document.getElementById('clickVenue').style.border = 0
+  document.getElementById('clickVenue').style.textAlign = "center"
+  console.log('Venue')
+}
+
+function clickMessageJS() {
+  document.getElementById('clickMessage').style.border = 0
+  document.getElementById('clickMessage').style.textAlign = "center"
+  console.log('Message')
+}
+
 document.getElementById('clickText1').innerHTML = "Together with our families"
 document.getElementById('clickText2').innerHTML = "&#038"
 document.getElementById('clickText3').innerHTML = "are please to invite you <br> to our wedding <br> celebration<br>"
 document.getElementById('clickText4').innerHTML = "at"
+
 
 
 
@@ -109,10 +158,10 @@ function inputTextWhite () {
     document.getElementById('displayVenueHTML').style.color = "white"
     document.getElementById('displayMessageHTML').innerText = inputMessage.value;
     document.getElementById('displayMessageHTML').style.color = "white"
-    document.getElementById('clickText1').style.color="white"
-    document.getElementById('clickText2').style.color="white"
-    document.getElementById('clickText3').style.color="white"
-    document.getElementById('clickText4').style.color="white"
+    document.getElementById('formText1').style.color="white"
+    document.getElementById('formText2').style.color="white"
+    document.getElementById('formText3').style.color="white"
+    document.getElementById('formText4').style.color="white"
   }
 }
 
@@ -128,6 +177,46 @@ function inputTextBlack () {
     document.getElementById('displayVenueHTML').style.color = "Black"
     document.getElementById('displayMessageHTML').innerText = inputMessage.value;
     document.getElementById('displayMessageHTML').style.color = "Black"
+    document.getElementById('formText1').style.color="Black"
+    document.getElementById('formText2').style.color="Black"
+    document.getElementById('formText3').style.color="Black"
+    document.getElementById('formText4').style.color="Black"
+  }
+}
+
+
+
+function clickTextWhite () {
+  if(document.getElementById('clickInput1') !== ""){
+    document.getElementById('clickGroom').innerText = inputGroom.value;
+    document.getElementById('clickGroom').style.color = "white"
+    document.getElementById('clickBride').innerText = inputBride.value;
+    document.getElementById('clickBride').style.color = "white"
+    document.getElementById('clickDate').innerText = inputDate.value;
+    document.getElementById('clickDate').style.color = "white"
+    document.getElementById('clickVenue').innerText = inputVenue.value;
+    document.getElementById('clickVenue').style.color = "white"
+    document.getElementById('clickMessage').innerText = inputMessage.value;
+    document.getElementById('clickMessage').style.color = "white"
+    document.getElementById('clickText1').style.color="white"
+    document.getElementById('clickText2').style.color="white"
+    document.getElementById('clickText3').style.color="white"
+    document.getElementById('clickText4').style.color="white"
+  }
+}
+
+function clickTextBlack () {
+  if (document.getElementById('clickInput1') !== ""){
+    document.getElementById('clickGroom').innerText = inputGroom.value;
+    document.getElementById('clickGroom').style.color = "Black"
+    document.getElementById('clickBride').innerText = inputBride.value;
+    document.getElementById('clickBride').style.color = "Black"
+    document.getElementById('clickDate').innerText = inputDate.value;
+    document.getElementById('clickDate').style.color = "Black"
+    document.getElementById('clickVenue').innerText = inputVenue.value;
+    document.getElementById('clickVenue').style.color = "Black"
+    document.getElementById('clickMessage').innerText = inputMessage.value;
+    document.getElementById('clickMessage').style.color = "Black"
     document.getElementById('clickText1').style.color="Black"
     document.getElementById('clickText2').style.color="Black"
     document.getElementById('clickText3').style.color="Black"
@@ -152,6 +241,41 @@ function inputReset() {
   document.getElementById('displayMessageHTML').style.color = "darkgray"  
   }
 
+function inputClickReset () {
+  document.getElementById('clickInput1').reset();
+  document.getElementById('formInput4').reset();
+
+  document.getElementById('clickGroom').style.textAlign = "left"
+  document.getElementById('clickGroom').style.borderWidth = "1px"
+  document.getElementById('clickGroom').style.borderStyle = "solid"
+  document.getElementById('clickGroom').style.border = "block"
+  document.getElementById('clickGroom').style.borderColor = "darkgray"
+
+  document.getElementById('clickBride').style.textAlign = "left"
+  document.getElementById('clickBride').style.borderWidth = "1px"
+  document.getElementById('clickBride').style.borderStyle = "solid"
+  document.getElementById('clickBride').style.border = "block"
+  document.getElementById('clickBride').style.borderColor = "darkgray"
+
+  document.getElementById('clickDate').style.textAlign = "left"
+  document.getElementById('clickDate').style.borderWidth = "1px"
+  document.getElementById('clickDate').style.borderStyle = "solid"
+  document.getElementById('clickDate').style.border = "block"
+  document.getElementById('clickDate').style.borderColor = "darkgray"
+
+  document.getElementById('clickVenue').style.textAlign = "left"
+  document.getElementById('clickVenue').style.borderWidth = "1px"
+  document.getElementById('clickVenue').style.borderStyle = "solid"
+  document.getElementById('clickVenue').style.border = "block"
+  document.getElementById('clickVenue').style.borderColor = "darkgray"
+
+  document.getElementById('clickMessage').style.textAlign = "left"
+  document.getElementById('clickMessage').style.borderWidth = "1px"
+  document.getElementById('clickMessage').style.borderStyle = "solid"
+  document.getElementById('clickMessage').style.border = "block"
+  document.getElementById('clickMessage').style.borderColor = "darkgray"
+}
+
 function clickHide () {
   document.getElementById('meHere').style.display = "none"
   document.getElementById('meAlso').style.display = "none"
@@ -175,6 +299,14 @@ targetDate.addEventListener('input', displayDateJS)
 targetVenue.addEventListener('input', displayVenueJS)
 targetMessage.addEventListener('input', displayMessageJS)
 
+// Call for click
+targetClickGroom.addEventListener('input', clickGroomJS)
+targetClickBride.addEventListener('input', clickBrideJS)
+targetClickDate.addEventListener('input', clickDateJS)
+targetClickVenue.addEventListener('input', clickVenueJS)
+targetClickMessage.addEventListener('input', clickMessageJS)
+
+
 // Call for button
 
 targetTextWhite.addEventListener('click', inputTextWhite)
@@ -182,6 +314,11 @@ targetTextBlack.addEventListener('click', inputTextBlack)
 targetReset.addEventListener('click', inputReset)
 targetHide.addEventListener('click', clickHide) 
 targetShow.addEventListener('click', clickShow)
+
+
+targetClickTextWhite.addEventListener('click', clickTextWhite)
+targetClickTextBlack.addEventListener('click', clickTextBlack)
+targetClickReset.addEventListener('click', inputClickReset)
 
 // Call for pattern
 targetPattern1.addEventListener('click', changePattern1)

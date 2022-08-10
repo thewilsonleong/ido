@@ -30,6 +30,7 @@ p {
 
 .topBand {
     width: 100%;
+    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,6 +86,7 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
+    /* object-fit: cover; */
 }
 
 
@@ -96,6 +98,7 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    /* gap: 10px; */
 }
 
 .select-item {
@@ -184,9 +187,11 @@ p {
     border-left: 5px solid darkgray;
   }
 
+  
 .design-input input[type=button]:hover {
     color :darkgray;
 }
+
 
 .design-input .tips  p {
     color: gray;
@@ -215,8 +220,15 @@ p {
 .design-text p {
     font-size: 1.2vw;
 }
+
 .design-pattern {
     grid-column: 2 / span 2;
+}
+
+.design #clickEdit,
+.design #formInput4,
+.design #formInput5 {
+    display: none;
 }
 
 .design-pattern img {
@@ -245,6 +257,7 @@ p {
     font-size: 2.5vw;
     margin: 0px;
 }
+
 
 
 /* about */
@@ -276,7 +289,11 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
+    /* margin-top: 10px; */
+    /* width: 25%; */
+    /* float: left; */
     padding-bottom: 30px;
+    /* background-color: gray; */
 }
 
 .footer-details h4 {

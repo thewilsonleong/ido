@@ -28,6 +28,7 @@ p {
 
 .topBand {
     width: 100%;
+    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,6 +84,7 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
+    /* object-fit: cover; */
 }
 
 
@@ -95,6 +97,7 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    /* gap: 10px; */
 }
 
 .select-item {
@@ -120,6 +123,7 @@ p {
     border: none;
     background-color: transparent;
     padding: 0 2.5px;
+    /* padding-left: 1px; */
 }
 
 .select-item button:hover {
@@ -128,6 +132,7 @@ p {
 }
 
 /* design form section */
+
 
 .design {
     background-color: lightgray;
@@ -202,6 +207,35 @@ p {
     border-left: 5px solid darkgray;
   }
 
+.design #button-arrange {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+#click-white,
+#click-black {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: darkgray;
+    padding: 5px;
+    margin: 2px;
+}
+
+#resetClick {
+    width: 100%;
+    /* height: 100%; */
+    outline: none;
+    border: none;
+    color: white;
+    background-color: darkgray;
+    height: 55px;
+    margin: 2px;
+}
+
 #hide,
 #show {
     color: white;
@@ -209,7 +243,10 @@ p {
 }
 
 #hide:hover,
-#show:hover {
+#show:hover,
+#resetClick:hover,
+#click-white:hover,
+#click-black:hover {
     color: black;
 }
 
@@ -230,21 +267,26 @@ p {
 }
 
 .design-display p {
-   font-size: 0.8em;
+    font-size: 0.8em;
 }
 
+
 .design-text {
+    display: none;
     grid-column: 1 / span 3;
     padding: 20px;
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 18%;
+    top: 20%;
+    /* background-color: blue; */
+    /* vertical-align: middle; */
 }
 
 .design-text p {
     font-size: 2vw;
 }
+
 .design-pattern {
     grid-column: 1 / span 3;
 }
@@ -252,6 +294,63 @@ p {
 .design-pattern img {
     width: 100%;
 }
+
+.design .design-input {
+    display: none;
+}
+
+
+
+.design #formInput5 {
+    grid-column: 1;
+}
+
+.design #formInput4 {
+    grid-column: 2;
+    width: 100%;
+}
+
+.design #clickEdit {
+    grid-column: 1 / span 3;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+}
+
+#clickEdit .clickInput {
+    width: 80%;
+    color: black;
+    border: 1px solid darkgray;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+.clickInput1 input[type=text]:focus {
+    border-left: 5px solid black;
+  }
+
+#clickEdit p {
+    font-size: 1.8vw;
+}
+
+.clickInput1 textarea:focus {
+    border-left: 5px solid black;
+  }
+
+
+.clickEdit ::placeholder {
+    color: black;
+    font-size: 0.75em;
+}
+
+
+
 
 /* design form display */
 
@@ -274,6 +373,8 @@ p {
     font-size: 4.5vw;
     margin: 0px;
 }
+
+
 
 /* about */
 
@@ -304,7 +405,11 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
+    /* margin-top: 10px; */
+    /* width: 25%; */
+    /* float: left; */
     padding-bottom: 30px;
+    /* background-color: gray; */
 }
 
 .footer-details h4 {
