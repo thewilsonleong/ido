@@ -30,7 +30,6 @@ p {
 
 .topBand {
     width: 100%;
-    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +85,6 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
-    /* object-fit: cover; */
 }
 
 
@@ -98,7 +96,6 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    /* gap: 10px; */
 }
 
 .select-item {
@@ -191,7 +188,6 @@ p {
     color :darkgray;
 }
 
-
 .design-input .tips  p {
     color: gray;
     font-size: 0.8em;
@@ -214,8 +210,6 @@ p {
     position: absolute;
     text-align: center;
     top: 20%;
-    /* background-color: blue; */
-    /* vertical-align: middle; */
 }
 
 .design-text p {
@@ -253,7 +247,6 @@ p {
 }
 
 
-
 /* about */
 
 #aboutMe {
@@ -283,11 +276,7 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
-    /* margin-top: 10px; */
-    /* width: 25%; */
-    /* float: left; */
     padding-bottom: 30px;
-    /* background-color: gray; */
 }
 
 .footer-details h4 {

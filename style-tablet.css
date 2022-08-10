@@ -28,7 +28,6 @@ p {
 
 .topBand {
     width: 100%;
-    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +83,6 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
-    /* object-fit: cover; */
 }
 
 
@@ -97,7 +95,6 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    /* gap: 10px; */
 }
 
 .select-item {
@@ -123,7 +120,6 @@ p {
     border: none;
     background-color: transparent;
     padding: 0 2.5px;
-    /* padding-left: 1px; */
 }
 
 .select-item button:hover {
@@ -133,14 +129,9 @@ p {
 
 /* design form section */
 
-
 .design {
     background-color: lightgray;
     padding: 20px 20px;
-
-}
-
-.design-container {
 
 }
 
@@ -249,8 +240,6 @@ p {
     position: absolute;
     text-align: center;
     top: 18%;
-    /* background-color: blue; */
-    /* vertical-align: middle; */
 }
 
 .design-text p {
@@ -263,7 +252,6 @@ p {
 .design-pattern img {
     width: 100%;
 }
-
 
 /* design form display */
 
@@ -286,8 +274,6 @@ p {
     font-size: 4.5vw;
     margin: 0px;
 }
-
-
 
 /* about */
 
@@ -318,11 +304,7 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
-    /* margin-top: 10px; */
-    /* width: 25%; */
-    /* float: left; */
     padding-bottom: 30px;
-    /* background-color: gray; */
 }
 
 .footer-details h4 {
