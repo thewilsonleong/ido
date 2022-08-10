@@ -24,23 +24,23 @@ const targetShow = document.getElementById('show')
 // Function
 
 function changePattern1 () {
-  document.getElementById("patternShow").src = "./image/pattern-4.png"
+  document.getElementById("patternShow").src = "./image/pattern-4.jpg"
   }
 
 function changePattern2 () {
-  document.getElementById("patternShow").src = "./image/pattern-1.png"
+  document.getElementById("patternShow").src = "./image/pattern-1.jpg"
   }
 
 function changePattern3 () {
-  document.getElementById("patternShow").src = "./image/pattern-5.png"
+  document.getElementById("patternShow").src = "./image/pattern-5.jpg"
   }
 
 function changePattern4 () {
-  document.getElementById("patternShow").src = "./image/pattern-3.png"
+  document.getElementById("patternShow").src = "./image/pattern-3.jpg"
   }
 
 function changePattern5 () {
-  document.getElementById("patternShow").src = "./image/pattern-2.png"
+  document.getElementById("patternShow").src = "./image/pattern-2.jpg"
   }
 
 
