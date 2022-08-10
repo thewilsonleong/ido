@@ -33,6 +33,11 @@ const targetPattern2 = document.getElementById('pattern2')
 const targetPattern3 = document.getElementById('pattern3')
 const targetPattern4 = document.getElementById('pattern4')
 const targetPattern5 = document.getElementById('pattern5')
+const targetPattern6 = document.getElementById('pattern6')
+const targetPattern7 = document.getElementById('pattern7')
+const targetPattern8 = document.getElementById('pattern8')
+const targetPattern9 = document.getElementById('pattern9')
+const targetPattern10 = document.getElementById('pattern10')
 
 
 
@@ -41,24 +46,46 @@ const targetPattern5 = document.getElementById('pattern5')
 
 // Function for pattern
 function changePattern1 () {
-  document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
-  }
-
-function changePattern2 () {
   document.getElementById("patternShow").src = "./image/Pattern-1.jpg"
   }
 
-function changePattern3 () {
-  document.getElementById("patternShow").src = "./image/Pattern-5.jpg"
-  }
-
-function changePattern4 () {
+function changePattern2 () {
   document.getElementById("patternShow").src = "./image/Pattern-2.jpg"
   }
 
-function changePattern5 () {
+function changePattern3 () {
   document.getElementById("patternShow").src = "./image/Pattern-3.jpg"
   }
+
+function changePattern4 () {
+  document.getElementById("patternShow").src = "./image/Pattern-4.jpg"
+  }
+
+function changePattern5 () {
+  document.getElementById("patternShow").src = "./image/Pattern-5.jpg"
+  }
+
+function changePattern6 () {
+document.getElementById("patternShow").src = "./image/Pattern-6.jpg"
+}
+
+function changePattern7 () {
+document.getElementById("patternShow").src = "./image/Pattern-7.jpg"
+}
+
+function changePattern8 () {
+document.getElementById("patternShow").src = "./image/Pattern-8.jpg"
+}
+
+function changePattern9 () {
+document.getElementById("patternShow").src = "./image/Pattern-9.jpg"
+}
+
+function changePattern10 () {
+document.getElementById("patternShow").src = "./image/Pattern-10.jpg"
+}
+
+
 
 
 // Function for preview placeholder  
@@ -326,6 +353,11 @@ targetPattern2.addEventListener('click', changePattern2)
 targetPattern3.addEventListener('click', changePattern3)
 targetPattern4.addEventListener('click', changePattern4)
 targetPattern5.addEventListener('click', changePattern5)
+targetPattern6.addEventListener('click', changePattern6)
+targetPattern7.addEventListener('click', changePattern7)
+targetPattern8.addEventListener('click', changePattern8)
+targetPattern9.addEventListener('click', changePattern9)
+targetPattern10.addEventListener('click', changePattern10)
 
 
 

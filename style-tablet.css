@@ -33,7 +33,6 @@ p {
 
 .topBand {
     width: 100%;
-    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,8 +103,7 @@ p {
 .design-select{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    /* gap: 10px; */
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 
 .select-item {
@@ -131,7 +129,6 @@ p {
     border: none;
     background-color: transparent;
     padding: 0 2.5px;
-    /* padding-left: 1px; */
 }
 
 .select-item button:hover {
@@ -331,8 +328,15 @@ p {
 
 /* Step 2: Design - display input click */
 
-.design .design-input {
+/* HIDE */
+.design .design-input,
+.hide {
     display: none;
+}
+
+/* SHOW */
+.show {
+    display: block
 }
 
 .design #formInput5 {
@@ -350,7 +354,7 @@ p {
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 25%;
 }
 
 #clickEdit .clickInput {
@@ -412,11 +416,7 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
-    /* margin-top: 10px; */
-    /* width: 25%; */
-    /* float: left; */
     padding-bottom: 30px;
-    /* background-color: gray; */
 }
 
 .footer-details h4 {
