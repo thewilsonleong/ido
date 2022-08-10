@@ -45,35 +45,35 @@ function changePattern5 () {
 
 
   
-document.getElementById('displayGroomHTML').innerText = "Groom Top"
+document.getElementById('displayGroomHTML').innerText = "Groom"
 document.getElementById('displayGroomHTML').style.color = "darkgray"
 function displayGroomJS() {
   document.getElementById('displayGroomHTML').innerText = inputGroom.value;
   document.getElementById('displayGroomHTML').style.color = "black"
   }
 
-document.getElementById('displayBrideHTML').innerText = "Bride Top"
+document.getElementById('displayBrideHTML').innerText = "Bride"
 document.getElementById('displayBrideHTML').style.color = "darkgray"
 function displayBrideJS() {
   document.getElementById('displayBrideHTML').innerText = inputBride.value;
   document.getElementById('displayBrideHTML').style.color = "black"
   }
 
-document.getElementById('displayDateHTML').innerText = "Date Top"
+document.getElementById('displayDateHTML').innerText = "Date"
 document.getElementById('displayDateHTML').style.color = "darkgray"
 function displayDateJS() {
   document.getElementById('displayDateHTML').innerText = inputDate.value;
   document.getElementById('displayDateHTML').style.color = "black"
   }
 
-document.getElementById('displayVenueHTML').innerText = "Venue Top"
+document.getElementById('displayVenueHTML').innerText = "Venue"
 document.getElementById('displayVenueHTML').style.color = "darkgray"
 function displayVenueJS() {
   document.getElementById('displayVenueHTML').innerText = inputVenue.value;
   document.getElementById('displayVenueHTML').style.color = "black"
   }
 
-document.getElementById('displayMessageHTML').innerText = "Message Top"
+document.getElementById('displayMessageHTML').innerText = "Message"
 document.getElementById('displayMessageHTML').style.color = "darkgray"
 function displayMessageJS() {
   document.getElementById('displayMessageHTML').innerText = inputMessage.value;
@@ -131,11 +131,11 @@ function inputReset() {
   document.getElementById('formInput1').reset();
   document.getElementById('formInput3').reset();
 
-  document.getElementById('displayGroomHTML').innerText = "Groom Bottom"
-  document.getElementById('displayBrideHTML').innerText = "Bride Bottom" 
-  document.getElementById('displayDateHTML').innerText = "Date Bottom"  
-  document.getElementById('displayVenueHTML').innerText = "Venue Bottom"  
-  document.getElementById('displayMessageHTML').innerText = "Message Bottom"  
+  document.getElementById('displayGroomHTML').innerText = "Groom"
+  document.getElementById('displayBrideHTML').innerText = "Bride" 
+  document.getElementById('displayDateHTML').innerText = "Date"  
+  document.getElementById('displayVenueHTML').innerText = "Venue"  
+  document.getElementById('displayMessageHTML').innerText = "Message"  
   
   document.getElementById('displayGroomHTML').style.color = "darkgray"
   document.getElementById('displayBrideHTML').style.color = "darkgray"
