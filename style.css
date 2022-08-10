@@ -1,3 +1,6 @@
+
+/* Setting General */
+
 * {
     box-sizing: border-box;
   }
@@ -27,10 +30,10 @@ p {
 }
 
 
+/* Header */
 
 .topBand {
     width: 100%;
-    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +51,9 @@ p {
     opacity: 0.6;
     z-index: 1;
 }
+
+
+/* Navigation */
 
 .nav a {
     color: black;
@@ -86,9 +92,10 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
-    /* object-fit: cover; */
 }
 
+
+/* Step 1: Select Pattern */
 
 .select {
     padding: 150px 20px 20px 20px;
@@ -98,7 +105,6 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    /* gap: 10px; */
 }
 
 .select-item {
@@ -131,7 +137,7 @@ p {
     opacity: 0.5;
 }
 
-/* design form section */
+/* Step 2: Design - input form */
 
 .design-02 input {
     display: none;
@@ -198,6 +204,8 @@ p {
     font-size: 0.8em;
 }
 
+/* Step 2: Design - display */
+
 .design-display {
     grid-column: 2 / span 2;
     padding: 0px 0px 0px 0px;
@@ -225,19 +233,6 @@ p {
     grid-column: 2 / span 2;
 }
 
-.design #clickEdit,
-.design #formInput4,
-.design #formInput5 {
-    display: none;
-}
-
-.design-pattern img {
-    width: 100%;
-}
-
-
-/* design form display */
-
 .design-text #displayGroomHTML,
 .design-text #displayBrideHTML,
 .design-text #displayDateHTML,
@@ -258,9 +253,19 @@ p {
     margin: 0px;
 }
 
+/* Step 2: Design - input click */
 
+.design #clickEdit,
+.design #formInput4,
+.design #formInput5 {
+    display: none;
+}
 
-/* about */
+.design-pattern img {
+    width: 100%;
+}
+
+/* About */
 
 #aboutMe {
     padding: 10px 20px 20px 10px;
@@ -271,7 +276,7 @@ p {
     margin: 0;
 }
 
-/* footer */
+/* Footer */
 
 #footer {
     background-color: white;
@@ -289,11 +294,7 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
-    /* margin-top: 10px; */
-    /* width: 25%; */
-    /* float: left; */
     padding-bottom: 30px;
-    /* background-color: gray; */
 }
 
 .footer-details h4 {
@@ -307,4 +308,3 @@ p {
 .footer-details a {
     font-size: 0.7em;
 }
-

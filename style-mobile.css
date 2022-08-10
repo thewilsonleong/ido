@@ -1,3 +1,5 @@
+/* Setting General */
+
 * {
     box-sizing: border-box;
   }
@@ -26,9 +28,11 @@ p {
     font-size: 0.8em;
 }
 
+
+/* Header */
+
 .topBand {
     width: 100%;
-    /* background-color: rgb(255, 255, 255, 0.8); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +50,9 @@ p {
     opacity: 0.6;
     z-index: 1;
 }
+
+
+/* Navigation */
 
 .nav a {
     color: black;
@@ -84,9 +91,10 @@ p {
 .nav-img {
     display: inline-block;
     width: 20%;
-    /* object-fit: cover; */
 }
 
+
+/* Step 1: Select Pattern */
 
 .select {
     padding: 150px 20px 20px 20px;
@@ -97,7 +105,6 @@ p {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    /* gap: 10px; */
 }
 
 .select-item {
@@ -123,7 +130,6 @@ p {
     border: none;
     background-color: transparent;
     padding: 0 2.5px;
-    /* padding-left: 1px; */
 }
 
 .select-item button:hover {
@@ -131,13 +137,12 @@ p {
     opacity: 0.5;
 }
 
-/* design form section */
 
+/* Step 2: Design - input form */
 
 .design {
     background-color: lightgray;
     padding: 20px 20px;
-
 }
 
 .design-input {
@@ -207,6 +212,9 @@ p {
     border-left: 5px solid darkgray;
   }
 
+
+/* Step 2: Design - input click button */
+
 .design #button-arrange {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -227,7 +235,6 @@ p {
 
 #resetClick {
     width: 100%;
-    /* height: 100%; */
     outline: none;
     border: none;
     color: white;
@@ -255,6 +262,8 @@ p {
 }
 
 
+/* Step 2: Design - display form hide */
+
 .design-input .tips  p {
     color: gray;
     font-size: 0.8em;
@@ -270,7 +279,6 @@ p {
     font-size: 0.8em;
 }
 
-
 .design-text {
     display: none;
     grid-column: 1 / span 3;
@@ -279,13 +287,33 @@ p {
     position: absolute;
     text-align: center;
     top: 20%;
-    /* background-color: blue; */
-    /* vertical-align: middle; */
 }
 
 .design-text p {
     font-size: 2vw;
 }
+
+.design-text #displayGroomHTML,
+.design-text #displayBrideHTML,
+.design-text #displayDateHTML,
+.design-text #displayVenueHTML,
+.design-text #displayMessageHTML {
+    font-size: 4.5vw;
+    margin: 0px;
+}
+
+.design-text #inputDelete,
+.design-text #inputDeleteGroom,
+.design-text #inputDeleteBride,
+.design-text #inputDeleteDate,
+.design-text #inputDeleteVenue,
+.design-text #inputDeleteMessage {
+    color: rgb(0, 0, 0, 0.2);
+    font-size: 4.5vw;
+    margin: 0px;
+}
+
+/* Step 2: Design - display click pattern */
 
 .design-pattern {
     grid-column: 1 / span 3;
@@ -295,11 +323,11 @@ p {
     width: 100%;
 }
 
+/* Step 2: Design - display input click */
+
 .design .design-input {
     display: none;
 }
-
-
 
 .design #formInput5 {
     grid-column: 1;
@@ -326,7 +354,6 @@ p {
     outline: none;
     background-color: transparent;
     padding: 5px;
-    /* margin-bottom: 10px; */
     font-family:Arial, Helvetica, sans-serif;
     font-size: 2.5vw;
 }
@@ -350,33 +377,7 @@ p {
 }
 
 
-
-
-/* design form display */
-
-.design-text #displayGroomHTML,
-.design-text #displayBrideHTML,
-.design-text #displayDateHTML,
-.design-text #displayVenueHTML,
-.design-text #displayMessageHTML {
-    font-size: 4.5vw;
-    margin: 0px;
-}
-
-.design-text #inputDelete,
-.design-text #inputDeleteGroom,
-.design-text #inputDeleteBride,
-.design-text #inputDeleteDate,
-.design-text #inputDeleteVenue,
-.design-text #inputDeleteMessage {
-    color: rgb(0, 0, 0, 0.2);
-    font-size: 4.5vw;
-    margin: 0px;
-}
-
-
-
-/* about */
+/* About */
 
 #aboutMe {
     padding: 10px 20px 20px 10px;
@@ -387,7 +388,8 @@ p {
     margin: 0;
 }
 
-/* footer */
+
+/* Footer */
 
 #footer {
     background-color: white;
@@ -405,11 +407,7 @@ p {
 .footer-details {
     font-size: 0.7em;
     text-align: left;
-    /* margin-top: 10px; */
-    /* width: 25%; */
-    /* float: left; */
     padding-bottom: 30px;
-    /* background-color: gray; */
 }
 
 .footer-details h4 {
@@ -423,4 +421,3 @@ p {
 .footer-details a {
     font-size: 0.7em;
 }
-
