@@ -92,14 +92,14 @@ document.getElementById("patternShow").src = "./image/Pattern-10.jpg"
 
 
 // Function for preview placeholder  
-document.getElementById('displayGroomHTML').innerText = "Groom"
+document.getElementById('displayGroomHTML').innerText = "Bride"
 document.getElementById('displayGroomHTML').style.color = "darkgray"
 function displayGroomJS() {
   document.getElementById('displayGroomHTML').innerText = inputGroom.value;
   document.getElementById('displayGroomHTML').style.color = "black"
   }
 
-document.getElementById('displayBrideHTML').innerText = "Bride"
+document.getElementById('displayBrideHTML').innerText = "Groom"
 document.getElementById('displayBrideHTML').style.color = "darkgray"
 function displayBrideJS() {
   document.getElementById('displayBrideHTML').innerText = inputBride.value;
@@ -170,8 +170,6 @@ document.getElementById('clickText1').innerHTML = "Together with our families"
 document.getElementById('clickText2').innerHTML = "&#038"
 document.getElementById('clickText3').innerHTML = "are please to invite you <br> to our wedding <br> celebration<br>"
 document.getElementById('clickText4').innerHTML = "at"
-
-
 
 
 // Function for button
@@ -256,8 +254,8 @@ function inputReset() {
   document.getElementById('formInput1').reset();
   document.getElementById('formInput3').reset();
 
-  document.getElementById('displayGroomHTML').innerText = "Groom"
-  document.getElementById('displayBrideHTML').innerText = "Bride" 
+  document.getElementById('displayGroomHTML').innerText = "Bride"
+  document.getElementById('displayBrideHTML').innerText = "Groom" 
   document.getElementById('displayDateHTML').innerText = "Date"  
   document.getElementById('displayVenueHTML').innerText = "Venue"  
   document.getElementById('displayMessageHTML').innerText = "Message"  
